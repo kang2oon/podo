@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>학습화면</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+	<style>
+		*{font-family: 'Noto Sans KR', sans-serif;box-sizing:border-box;}
+		html,body{position:relative;width:100%;height:100%;margin:0;padding:0;background:#f1f1f1;}
+		.clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
+		img{max-width:100%;line-height:0;}
+		ul,ol,li{list-style:none;margin:0;padding:0;}
+		a{text-decoration:none;color:inherit;}
+		
+		.card-wrap{pasition:relative;margin:50px auto;width:825px;}
+		.card-wrap .card{
+			float:left;width:204px;height:183px;background:#fff;margin-left:3px;text-align:center;padding:13px;
+			border-style:solid;border-width:1px 1px 1px 5px;border-color:#d9d9d9;border-radius:3px;
+		}
+		.card-wrap .card:first-child{margin:0;border-left-color:#27b2a5;}
+		.card-wrap .card:nth-child(2){border-left-color:#8fc41f;}
+		.card-wrap .card:nth-child(3){border-left-color:#7ecef4;}
+		.card-wrap .card:nth-child(4){border-left-color:#3499da;}
+		.card-wrap h3{font-size:18px;margin:0;}
+		.card-wrap h3 span{font-size:15px;font-weight:300;color:#ce0000;}
+		.card-wrap .ico{width:32px;height:32px;margin:12px auto 10px;background:url(/images/ico_card.png) no-repeat 0 0;}
+		.card-wrap .card:nth-child(2) .ico{background-position-y:-32px;}
+		.card-wrap .card:nth-child(3) .ico{background-position-y:-64px;}
+		.card-wrap .card:nth-child(4) .ico{background-position-y:-96px;}
+		.card-wrap p{font-size:13px;letter-spacing:-.5px;margin:0;}
+		.card-wrap .score{font-size:28px;font-weight:700;margin-top:10px;}
+		.card-wrap .score span{font-weight:300;}
+		.card-wrap .btn{display:inline-block;font-size:14px;font-weight:500;color:#fff;padding:4px 15px;border-radius:20px;margin:7px auto 0;}
+		.card-wrap .card:nth-child(2) .btn{background:#8fc41f;}
+		.card-wrap .card:nth-child(3) .btn{background:#7ecef4;}
+		.card-wrap .card:nth-child(4) .btn{background:#3499da;}
+		.card-wrap .card .btn.comp{background:#9b9b9b;}
+	</style>
+</head>
+<body>
+	<div class="card-wrap clearfix">
+		<div class="card">
+			<h3>출석</h3>
+			<div class="ico"></div>
+			<p>출석점수</p>
+			<div class="score">70<span>점</span></div>
+		</div>
+		<div class="card">
+			<h3>진행평가 <span>(D-10)</span></h3>
+			<div class="ico"></div>
+			<p>2020-08-18~2020-08-31<br/>(응시완료)</p>
+			<a href="javasctipt:void(0);" class="btn comp">응시완료</a>
+		</div>
+		<div class="card">
+			<h3>최종시험 <span>(D-10)</span></h3>
+			<div class="ico"></div>
+			<p>2020-08-18~2020-08-31<br/>(미응시)</p>
+			<a href="javasctipt:void(0);" class="btn">응시하기</a>
+		</div>
+		<div class="card">
+			<h3>과제 <span>(D-10)</span></h3>
+			<div class="ico"></div>
+			<p>2020-08-18~2020-08-31<br/>(미제출)</p>
+			<a href="javasctipt:void(0);" class="btn">제출하기</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -109,7 +109,7 @@ a{text-decoration:none;color:inherit;}
 .bg-type2{
 		display:flex;justify-content:center;align-items:center;
 		width:100%;height:100%;
-		background:#f5f5f5 url(/images/bg_login2.png) no-repeat;background-size:cover;
+		background:#f5f5f5 url(/images/bg_login4.jpg) no-repeat;background-size:cover;
 	}
 .login-wrap2{width:900px;}
 .mem-area .fleft, .mem-area .fright{width:450px;height:450px;background:#fff;border:1px solid #d4d4d4;}
@@ -158,7 +158,7 @@ a{text-decoration:none;color:inherit;}
 	.join-wrap form .input-wrap input#inp_id{width:calc(100% - 110px);}
 	.join-wrap form .input-wrap input.inp_mail, .join-wrap form .input-wrap input.inp_zip{width:30%;}
 	.join-wrap form .input-wrap input.inp_num{width:35%;}
-	.join-wrap form .input-wrap input[type='button']{width:100px;background:#fff;border:1px solid #000;color:#000;padding:8px 13px;margin-left:5px;}
+	.join-wrap form .input-wrap input[type='button']{width:100px;background:#fff;border:1px solid #000;color:#000;padding:8px 13px;margin-left:8px;}
 	.join-wrap form .input-wrap select{border:1px solid #d9d9d9;padding:7px 13px;background:url(/images/select_sign.png) no-repeat calc(100% - 13px) 50%;-webkit-appearance: none;}
 	.join-wrap form .input-wrap select.sel_mail{width:328px;}
 	.join-wrap form .input-wrap select.sel_num{width:240px;}
