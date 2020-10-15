@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>로그인</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<div id="spring" class="container fluid full-bg3">
+	<!-- S : 계절 변경 확인용 - 실제 반영시 제거해 주세요. -->
+	<div class="change_season">
+		<select name="change_season">
+			<option value="spring">봄</option>
+			<option value="summer">여름</option>
+			<option value="fall">가을</option>
+			<option value="winter">겨울</option>
+		</select>
+	</div>
+	<!-- E : 계절 변경 확인용 -->
+	<div class="login-wrap3 clearfix">
+		<h1><img src="/images/logo_gray.png" alt="podonamu e-HRD솔루션" /><br/>포도소프트웨어에 오신 걸 환영합니다.</h1>
+		<div class="login-box3">
+			<div class="clearfix">
+				<form action="">
+					<h2>LOGIN</h2>
+					<div class="clearfix">
+						<div class="fleft">
+							<input type="text" placeholder="아이디"/>
+							<input type="password" placeholder="비밀번호"/>
+						</div>
+						<div class="fright">
+							<input type="submit" value="로그인" />
+						</div>
+					</div>
+					<div class="mem_addon clearfix">
+						<div class="fleft">
+							<label class="cst-check">아이디 저장
+								<input type="checkbox" />
+								<span class="checkmark"></span>
+							</label>
+						</div>
+						<ul class="fright clearfix">
+							<li><a href="javascript:void(0);">아이디 찾기</a></li>
+							<li><a href="javascript:void(0);">비밀번호 찾기</a></li>
+							<li><a href="javascript:void(0);">회원가입</a></li>
+						</ul>
+					</div>
+				</form>
+				<div class="cscenter-box">
+					<h3>학습지원센터</h3>
+					<strong>070-7432-2657</strong>
+					<a href="mailto:helpdesk@podosw.com">helpdesk@podosw.com</a>
+					월~금 9:00~18:00 / 토&middot;일&middot;공휴일 휴무
+				</div>
+			</div>
+			<hr/>
+			<h2>
+				공지사항
+				<a href="javascript:void(0);" class="more">더보기</a>
+			</h2>
+			<ul class="noti-list">
+				<li>
+					[전사필독] 2016년 5,6월 학습창 테스트 진행
+					<span class="date">2016.05.09</span>
+				</li>
+				<li>
+					megaHRD 개인정보처리방침, 서비스이용약관 확인 바랍니다.
+					<span class="date">2015.08.31</span>
+				</li>
+				<li>
+					5월의 우수사원을 뽑는 폴이 게시되었습니다.
+					<span class="date">2014.05.30</span>
+				</li>
+			</ul>
+		</div>
+		<ul class="fnb clearfix">
+			<li><a href="javascript:void(0);">서비스이용약관</a></li>
+			<li><a href="javascript:void(0);">개인정보보호정책</a></li>
+		</ul>
+	</div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
+<script>
+	$('select[name=change_season]').change(function(){
+		var season = $(this).val();
+		$('.full-bg3').removeAttr('id');
+		$('.full-bg3').attr('id',season);
+	});
+</script>
+</body>
+</html>

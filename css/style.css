@@ -139,6 +139,47 @@ a{text-decoration:none;color:inherit;}
 	.info-area .contact-box a{display:inline-block;font-size:14px;margin-left:25px;}
 	.info-area .cs_time{font-size:14px;color:#444;margin-top:10px;}
 	
+/* Login Type 3 */
+.full-bg3{
+	display:flex;justify-content:center;align-items:center;
+	width:100%;height:100%;
+	background-color:#fff;background-position:50% 100%;background-size:cover;
+}	
+	.change_season{position:absolute;top:10px;right:10px;}
+	.full-bg3#spring{background-image:url(/images/bg_full_spring.jpg);}
+	.full-bg3#summer{background-image:url(/images/bg_full_summer.jpg);}
+	.full-bg3#fall{background-image:url(/images/bg_full_fall.jpg);}
+	.full-bg3#winter{background-image:url(/images/bg_full_winter.jpg);}
+.login-wrap3{margin-top:-150px;text-align:center;}
+	.login-wrap3 h1{text-align:center;font-size:21px;}
+	.login-wrap3 .fnb{float:none;display:inline-block;margin:0 auto;color:#000;}
+	.login-wrap3 .fnb li{color:#000;}
+	.login-wrap3 .fnb li + li:before{content:"|";color:rgba(0,0,0,.35);padding:0 15px;}
+.login-box3{width:840px;border:1px solid #d9d9d9;border-radius:20px;padding:40px;margin:30px auto 20px;text-align:left;}
+	.login-box3 h2{position:relative;font-size:21px;font-weight:700;margin:0 0 10px;letter-spacing:-1px;}
+	.login-box3 h2 .more{position:absolute;top:8px;right:0;font-size:14px;font-weight:400;color:#888;}
+	.login-box3 h2 .more:before{content:"+";padding-right:8px;}
+	.login-box3 hr{border:1px #ececec;border-style:solid none none;margin:40px 0;}
+	.login-box3 form{float:left;width:370px;}
+	.login-box3 form h2{margin:0 0 20px;}
+	.login-box3 form .fleft{width:75%}
+	.login-box3 form .fright{width:calc(25% - 10px);}
+	.login-box3 form input[type='text'], .login-box3 form input[type='password']{
+		width:100%;border:1px solid #d9d9d9;font-size:14px;padding:8px 13px;
+	}
+	.login-box3 form input[type='submit']{background:#000;border:1px solid #000;color:#fff;width:100%;height:84px;}
+	.login-box3 form input::placeholder{color:#888;font-weight:400;}
+	.login-box3 form input + input{margin-top:8px;}
+	.login-box3 form .mem_addon{margin-top:13px;font-size:14px;color:#888;font-weight:400;}
+	.login-box3 form .mem_addon .fleft, .login-box3 form .mem_addon .fright{width:auto;}
+	.login-box3 form .mem_addon li{float:left;}
+	.login-box3 form .mem_addon li + li:before{content:"|";color:rgba(0,0,0,.15);padding:0 10px;}
+	.login-box3 .cscenter-box{float:right;width:349px;background:#f5f5f5;border:1px solid #d9d9d9;border-radius:10px;text-align:center;padding:15px;font-size:14px;}
+	.login-box3 .cscenter-box h3{font-size:18px;font-weight:500;margin:0 0 10px;}
+	.login-box3 .cscenter-box strong{font-size:24px;}
+	.login-box3 .cscenter-box a{display:block;font-size:16px;margin:0 0 15px;}
+	
+	
 /* Join */
 .join-wrap{margin:50px 0;}
 	.join-wrap h1{font-size:42px;text-align:center;}
